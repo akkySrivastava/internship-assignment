@@ -1,0 +1,133 @@
+.movieList {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: 6px 4px 9px -4px #00f7ff;
+  border-radius: 5px;
+  margin: 10px;
+  min-width: 460px;
+  max-width: 460px;
+  transition: all 0.5s;
+}
+
+.movieList:hover {
+  transform: scale(0.9);
+}
+.movieList__Content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movieList__ContentLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movieList__ContentTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.movieList__ContentTop > p {
+  font-size: large;
+  font-weight: 500;
+}
+
+.movieList__ContentLeftTop > .MuiSvgIcon-root {
+  font-size: 60px;
+}
+.movieList__ContentLeftDown > .MuiSvgIcon-root {
+  font-size: 60px;
+}
+
+.movieList__ContentBottom > p {
+  color: #333;
+  font-weight: 500;
+}
+
+.movieList__ContentMiddle {
+  display: flex;
+}
+
+.movieList__ContentMiddle > img {
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 8px 8px 8px -4px #333;
+  margin-right: 10px;
+}
+
+.movieList__ContentRight {
+  display: flex;
+  flex-direction: column;
+}
+
+.movieList__ContentRightInfo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.movieList__ContentRightInfo > h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.movieList__ContentRightInfo > p {
+  color: gray;
+  font-weight: 700;
+}
+
+.movieList__ContentRightInfo > p:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: horizontal;
+  -webkit-line-clamp: 3;
+  max-height: 6rem;
+}
+
+.movieList__ContentRightInfo > p::-webkit-scrollbar {
+  display: none;
+}
+
+.movieList__ContentRightInfo > p > span {
+  color: #000;
+  font-weight: 500;
+}
+
+.movieList__ContentRightExtras {
+  display: flex;
+}
+
+.movieList__ContentRightExtras > p {
+  margin-bottom: 5px;
+}
+
+.movieList__ContentRightRest {
+  display: flex;
+  color: #007bff;
+}
+
+.movieList > button {
+  margin-top: 10px;
+  padding: 7px;
+  background-color: #0011ff;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 550;
+  letter-spacing: 0.9px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.movieList > button:hover {
+  background-color: #0011ff9f;
+  color: #333;
+}
